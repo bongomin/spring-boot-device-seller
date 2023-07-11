@@ -30,4 +30,8 @@ public class Device {
     @Enumerated(EnumType.STRING)
     @Column(name = "device_type", nullable = false)
     private DeviceType deviceType;
+
+//    @OneToMany(fetch= FetchType.LAZY, mappedBy = "device")
+//    private Set<Purchase>purchaseList;
+
 }
