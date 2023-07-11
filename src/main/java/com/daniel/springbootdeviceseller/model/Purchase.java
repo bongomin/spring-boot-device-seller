@@ -29,7 +29,7 @@ public class Purchase {
     @JoinColumn(name = "device_id", referencedColumnName = "id", updatable = false, insertable = false)
     private final Device device;
 
-    @Column(name = "price",nullable = false,length = 100)
+    @Column(name = "price", nullable = false, length = 100)
     private final double price;
 
     @Column(name = "color", nullable = false, length = 100)
