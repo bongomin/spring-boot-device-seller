@@ -13,29 +13,29 @@ import java.time.LocalDateTime;
 public class Purchase {
 
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private final Long id;
+    private  Long id;
 
     @Column(name = "user_id", nullable = false)
     private long userId;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id", referencedColumnName = "id", insertable = false, updatable = false)
-    private final User user;
+    private  User user;
 
     @Column(name = "device_id", nullable = false)
     private long DeviceId;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "device_id", referencedColumnName = "id", updatable = false, insertable = false)
-    private final Device device;
+    private  Device device;
 
     @Column(name = "price", nullable = false, length = 100)
-    private final double price;
+    private  double price;
 
     @Column(name = "color", nullable = false, length = 100)
-    private final String color;
+    private  String color;
 
     @Column(name = "purchase_time", nullable = false)
-    private final LocalDateTime purchaseTime;
+    private  LocalDateTime purchaseTime;
 
 }

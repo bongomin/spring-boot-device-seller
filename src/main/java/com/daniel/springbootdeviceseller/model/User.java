@@ -12,23 +12,23 @@ import java.time.LocalDateTime;
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private final Long id;
+    private  Long id;
 
     @Column(name = "username", unique = true, nullable = false, length = 100)
-    private final String username;
+    private  String username;
 
     @Column(name = "password", nullable = false, length = 100)
-    private final String password;
+    private  String password;
 
     @Column(name = "name", nullable = false, length = 100)
-    private final String name;
+    private  String name;
 
     @Column(name = "create_time", nullable = false)
-    private final LocalDateTime createdDate;
+    private  LocalDateTime createdDate;
 
     //    role
     @Enumerated(EnumType.STRING)
     @Column(name = "role", nullable = false)
-    private final Role role;
+    private  Role role;
 
 }
