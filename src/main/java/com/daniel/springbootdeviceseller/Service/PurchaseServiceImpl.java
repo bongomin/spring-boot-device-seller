@@ -12,7 +12,7 @@ import java.util.List;
 @Service
 public class PurchaseServiceImpl implements PurchaseService {
 
-    private PurchaseRepository purchaseRepository;
+    private final PurchaseRepository purchaseRepository;
 
     @Autowired
     public PurchaseServiceImpl(PurchaseRepository purchaseRepository) {

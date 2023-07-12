@@ -11,7 +11,7 @@ import java.util.List;
 @Service
 public class DeviceServiceImpl implements DeviceService {
 
-   private DeviceRepository deviceRepository;
+   private final DeviceRepository deviceRepository;
 
    @Autowired
     public DeviceServiceImpl(DeviceRepository deviceRepository) {
