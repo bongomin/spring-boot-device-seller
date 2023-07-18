@@ -20,7 +20,7 @@ public class UserPrinciple implements UserDetails {
     private Long id;
     private String username;
     transient private String password; //used transiient such that it does not show up on serialized places
-    transient User user; //same here User for login operations only. dont use in JWT
+    transient private User user; //same here User for login operations only. dont use in JWT
     private Set<GrantedAuthority> authorities;
 
     @Override
